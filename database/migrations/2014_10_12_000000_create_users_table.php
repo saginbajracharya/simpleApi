@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->unsignedInteger('coin')->default(0); // Change to unsigned integer with default value 0
+            $table->unsignedInteger('gem')->default(0); // Change to unsigned integer with default value 0
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

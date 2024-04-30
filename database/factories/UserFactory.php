@@ -29,6 +29,8 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
+            'coin' => $this->faker->numberBetween(0, 1000), // Example: Random coin value between 0 and 1000
+            'gem' => $this->faker->numberBetween(0, 100), // Example: Random gem value between 0 and 100
         ];
     }
 

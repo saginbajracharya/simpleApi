@@ -1,0 +1,4 @@
+[23-Feb-2024 17:59:41 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/dlofistu/public_html/simpleApi/app/Http/Controllers/UserController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/dlofistu/public_html/simpleApi/app/Http/Controllers/UserController.php on line 9

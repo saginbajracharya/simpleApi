@@ -21,3 +21,10 @@ Route::get('/migrate', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('/reset-password', function () {
+//     return view('emails.reset-password', [
+//         'token' => request()->query('token'),
+//         'email' => request()->query('email'),
+//     ]);
+// })->name('password.reset');
